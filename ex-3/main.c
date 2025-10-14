@@ -1,19 +1,23 @@
+
 #include <stdlib.h>
 #include <stdio.h>
-
-void str_rev(char *str) {
+void str_rev(char *str){
     int len = 0;
     while (str[len] != '\0') {
         len++;
     }
     char str_re[1000000];
-    for (int i = 0; i < len; i++) {
-        str_re[i] = str[len - 1 - i];
+    int i = 0;
+    while (i < len){
+        str_re[i] = str[len - i - 1];
+        i = i + 1;
+        
     }
-    str_re[len] = '\0';
-    printf("%s\n", str_re);
+ printf("%s\n", str_re);   
 }
 
-int main() {
+int main(){
     str_rev("hello");
+
 }
+
