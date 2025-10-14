@@ -14,7 +14,7 @@ int count_words(char *str) {
         } else {
             mot = 0;
         }
-        i++;
+        i++; 
     }
     return n;
 }
