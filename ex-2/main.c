@@ -13,6 +13,6 @@ int str_cmp(char *str1, char *str2){
     return 1;
 }
 int main(){
-    printf(str_cmp("hello", "hello"));
+    printf(str_cmp("hello", "helo"));
 
 }
